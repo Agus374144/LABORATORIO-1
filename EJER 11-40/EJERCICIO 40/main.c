@@ -15,7 +15,10 @@ do{
   scanf ("%f", &sueldo);
   printf ("Ingrese sexo del empleado, siendo 1-FEMENINO y 2-MASCULINO: ");
   scanf ("%d", &sexo);
-  
+  while (sexo>2 || sexo<1){
+        printf ("ERROR");
+        scanf ("%d", &sexo);
+}
   if (sexo=1 && sueldo>500){
              contFem++;
              }
